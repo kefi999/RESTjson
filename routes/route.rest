@@ -1,0 +1,25 @@
+GET http://localhost:3000/people
+
+###
+
+POST http://localhost:3000/people
+Content-Type: application/json
+
+{
+    "name" : "Stefan",
+    "lastName" : "Petkovic"
+}
+
+###
+
+GET http://localhost:3000/people/6485a651819b17ab691c3426
+
+###
+
+PATCH http://localhost:3000/people/6485a651819b17ab691c3426
+Content-Type: application/json
+
+{
+    "name" : "New Stefan",
+    "lastName": "New Petkovic"
+}
